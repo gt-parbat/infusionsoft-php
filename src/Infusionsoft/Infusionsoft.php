@@ -246,7 +246,7 @@ class Infusionsoft
             'client_id'     => $this->clientId,
             'redirect_uri'  => $this->redirectUri,
             'response_type' => 'code',
-            'scope'         => 'full'
+            'scope'         => 'full,refresh_token'
         );
 
         if ( ! is_null($state) && $state !== null && is_string($state)) {
